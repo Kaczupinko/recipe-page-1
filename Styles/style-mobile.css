@@ -1,0 +1,175 @@
+:root {
+    --spacing-500: 32px;
+    --spacing-400: 16px;
+    --spacing-300: 8px;
+}
+
+@media screen and (min-width: 375px) {
+    .content-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 200px var(--spacing-500) var(--spacing-500) var(--spacing-500);
+    }
+    .image-container {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .preparation-box, .ingredient-box, .instruction-box, .nutrition-box {
+        padding: var(--spacing-400);
+        align-items: flex-start;
+        gap: var(--spacing-300);
+        align-self: stretch;
+    }
+
+    .title {
+        color: #312E2C;
+        font-family: "Young Serif";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+    .title-text {
+        color: #5F564D;
+        font-family: Outfit;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    .preparation-box {
+        border-radius: 12px;
+        background: #FFF7FB;
+    }
+    .preparation-title {
+        color: #7A284E;
+        /* Desktop/text-preset-3 */
+        font-family: Outfit;
+        font-size: var(--font-size-desktop-text-preset-3, 20px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%; /* 20px */
+    }
+    .preparation-text {
+        color: #5F564D;
+        /* Desktop/text-preset-4 */
+        font-family: Outfit;
+        font-size: var(--font-size-desktop-text-preset-4, 16px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    .ingredients-box {
+
+    }
+
+    .ingredients-title {
+        color: var(--color-brown-800, #854632);
+
+        /* Desktop/text-preset-2 */
+        font-family: "Young Serif";
+        font-size: var(--font-size-desktop-text-preset-2, 28px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 28px */
+    }
+    .ingredients-list {
+
+    }
+
+    .ingredients-text {
+        color: var(--color-stone-600, #5F564D);
+
+        /* Desktop/text-preset-4 */
+        font-family: Outfit;
+        font-size: var(--font-size-desktop-text-preset-4, 16px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+    }
+
+    .instructions-box {
+
+    }
+    .instructions-title {
+        color: var(--color-brown-800, #854632);
+
+        /* Desktop/text-preset-2 */
+        font-family: "Young Serif";
+        font-size: var(--font-size-desktop-text-preset-2, 28px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 28px */
+    }
+    .instructions-list {
+
+    }
+    .instructions-text {
+        color: var(--color-stone-600, #5F564D);
+
+        /* Desktop/text-preset-4-bold */
+        font-family: Outfit;
+        font-size: var(--font-size-desktop-text-preset-4, 16px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 24px */
+    }
+
+    .nutrition-box {
+
+    }
+    .nutrition-title {
+        color: var(--color-brown-800, #854632);
+
+        /* Desktop/text-preset-2 */
+        font-family: "Young Serif";
+        font-size: var(--font-size-desktop-text-preset-2, 28px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 28px */
+    }
+    .nutrition-text {
+        color: var(--color-stone-600, #5F564D);
+
+        /* Desktop/text-preset-4 */
+        font-family: Outfit;
+        font-size: var(--font-size-desktop-text-preset-4, 16px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+    }
+    .nutrition-table {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-150, 12px);
+        align-self: stretch;
+    }
+    tr {
+        display: flex;
+        flex-direction: row;
+
+    }
+    th {
+        
+    }
+    td {
+        color: var(--color-brown-800, #854632);
+
+        /* Desktop/text-preset-4-bold */
+        font-family: Outfit;
+        font-size: var(--font-size-desktop-text-preset-4, 16px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 24px */
+    }
+}

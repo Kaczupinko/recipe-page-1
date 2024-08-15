@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Page</title>
-    <link rel="stylesheet" href="style-mobile.css">
+    <link rel="stylesheet" href="./Styles/normalize.css">
+    <link rel="stylesheet" href="./Styles/style-mobile.css">
     <link rel="stylesheet" href="style-tablet.css">
     <link rel="stylesheet" href="style-desktop.css">
 </head>
 <body>
-    <img src="./Images/top-image.png" alt="Omelette-image">
-    <article class="content-box">
+    <main class="content-box">
+        <div class="image-container">
+            <img src="./Images/top-image.png" alt="Omelette-image">
+        </div>
         <header class="title-box">
             <h1 class="title">Simple Omelette Recipe</h1>
             <p class="title-text">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
         </header>
-        <main>
-            <h2>Preparation time</h2>
-            <ul class="preparation-box">Preparation time
+        <section class="preparation-box">
+            <h2 class="preparation-title">Preparation time</h2>
+            <ul>
                 <li class="preparation-text">Total: Approximately 10 minutes</li>
                 <li class="preparation-text">Preparation: 5 minutes</li>
                 <li class="preparation-text">Cooking: 5 minutes</li>
             </ul>
-        </main>
-        <section>
-            <h2>Ingredients</h2>
-            <ul class="ingredients-box">
+        </section>
+        <section class="ingredients-box">
+            <h2 class="ingredients-title">Ingredients</h2>
+            <ul class="ingredients-list">
                 <li class="ingredients-text">2-3 large eggs</li>
                 <li class="ingredients-text">Salt, to taste</li>
                 <li class="ingredients-text">Pepper, to taste</li>
@@ -33,9 +36,9 @@
                 <li class="ingredients-text">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
             </ul>
         </section>
-        <section>
-            <h2>Instructions</h2>
-            <ol class="instructions-box">
+        <section class="instructions-box">
+            <h2 class="instructions-title">Instructions</h2>
+            <ol class="instructions-list">
                 <li class="instructions-text"><strong>Beat the eggs:</strong>In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
                 <li class="instructions-text"><strong>Heat the pan:</strong>Place a non-stick frying pan over medium heat and add butter or oil.</li>
                 <li class="instructions-text"><strong>Cook the omelette:</strong>Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
@@ -44,10 +47,10 @@
                 <li class="instructions-text"><strong>Enjoy:</strong>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
             </ol>
         </section>
-        <section>
-            <h2>Nutrition</h2>
-            <p>The table below shows nutritional values per serving without the additional fillings.</p>
-            <table>
+        <section class="nutrition-box">
+            <h2 class="nutrition-title">Nutrition</h2>
+            <p class="nutrition-text">The table below shows nutritional values per serving without the additional fillings.</p>
+            <table class="nutrition-table">
                 <tr>
                     <th>Calories</th>
                     <td><strong>227Kcal</strong></td>
@@ -66,6 +69,6 @@
                 </tr>
             </table>
         </section>
-    </article>
+    </main>
 </body>
 </html>
