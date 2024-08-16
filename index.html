@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
     <link rel="stylesheet" href="./Styles/normalize.css">
-    <link rel="stylesheet" href="./Styles/style-mobile.css">
-    <link rel="stylesheet" href="style-tablet.css">
-    <link rel="stylesheet" href="style-desktop.css">
+    <link rel="stylesheet" href="./Styles/style.css">
 </head>
 <body>
     <main class="content-box">
-        <div class="image-container">
-            <img src="./Images/top-image.png" alt="Omelette-image">
-        </div>
+        <img src="./Images/top-image.png" alt="Omelette-image">
         <header class="title-box">
             <h1 class="title">Simple Omelette Recipe</h1>
             <p class="title-text">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
@@ -21,9 +29,9 @@
         <section class="preparation-box">
             <h2 class="preparation-title">Preparation time</h2>
             <ul>
-                <li class="preparation-text">Total: Approximately 10 minutes</li>
-                <li class="preparation-text">Preparation: 5 minutes</li>
-                <li class="preparation-text">Cooking: 5 minutes</li>
+                <li class="preparation-text"><strong>Total:</strong> Approximately 10 minutes</li>
+                <li class="preparation-text"><strong>Preparation:</strong> 5 minutes</li>
+                <li class="preparation-text"><strong>Cooking:</strong> 5 minutes</li>
             </ul>
         </section>
         <section class="ingredients-box">
@@ -70,5 +78,11 @@
             </table>
         </section>
     </main>
+    <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Radoslaw Jadczyk</a>.
+    </footer>
 </body>
 </html>
