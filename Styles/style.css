@@ -12,8 +12,152 @@
     /* Neutral color */
     --White-color: hsl(0, 0%, 100%);
     --Rose-White: hsl(330, 100%, 98%);
-    --Eggshell-background-color: hsl(30, 54%, 90%);
+    --Eggshell: hsl(30, 54%, 90%);
     --Light-Grey: hsl(30, 18%, 87%);
     --Wenge-Brown: hsl(30, 10%, 34%);
     --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Eggshell);
+    display: flex;
+    width: 1440px;
+    padding: 128px 48px;
+    gap: 8px;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: self-start;
+    gap: 12px;
+    flex-shrink: 0;
+    width: 736px;
+    background-color: white;
+    border-radius: 24px;
+}
+img {
+    height: 300px;
+    align-self: stretch;
+    border-radius: 12px;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+
+
+.line {
+    border-bottom: 1px solid #E3DDD7;
+    width: 656px;
+}
+
+.header>h1 {
+    color: #312E2C;
+    font-family: "Young Serif";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+.preparation>h2 {
+    color: #7A284E;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.instructions>h2, .nutrition>h2, .ingredients>h2 {
+    color: #854632; 
+    font-family: "Young Serif";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; 
+}
+
+.header>p, .preparation>ul>li, .ingredients>ul>li, .instructions>ol>li, .nutrition>p, .nutrition>table>tr>th+td, li::marker {
+    color: #5F564D;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.preparation {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: #FFF7FB;
+}
+
+ul {
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 8px;
+    padding-left: 18px;
+}
+
+ol {
+    padding-left: 24px;
+}
+
+.ingredients, .instructions, .nutrition {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+table {
+
+    gap: 12px;
+    align-self: stretch;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #E3DDD7; 
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.nutrition th {
+    font-weight: 400;
+    padding-left: 26px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer a {
+    text-decoration: none;
 }
